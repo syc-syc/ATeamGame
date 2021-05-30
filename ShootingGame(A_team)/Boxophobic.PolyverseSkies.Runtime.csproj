@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E4AB3647-BEC3-7CFE-AEE7-40BACB3D586F}</ProjectGuid>
+    <ProjectGuid>{77CC28FD-3AAE-E6BF-FDF5-791CE7A825EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Boxophobic.PolyverseSkies.Runtime</AssemblyName>
@@ -654,7 +654,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
-      <Project>{96393ABF-E9D4-C2E0-2E01-795A2CD0F278}</Project>
+      <Project>{B57CA3FA-8B14-B33F-4CA1-B0C1BEC885A4}</Project>
       <Name>Boxophobic.Utils.Scripts</Name>
     </ProjectReference>
   </ItemGroup>

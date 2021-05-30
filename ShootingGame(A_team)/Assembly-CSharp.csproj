@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6CB2260E-E4F5-F1A5-FFC7-4B697E8DD5C0}</ProjectGuid>
+    <ProjectGuid>{7DEA1889-8EF7-889A-865E-2493DC844492}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Factory\FactorySO.cs" />
+    <Compile Include="Assets\Scripts\UI\ScoreKeeper.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\SimpleApocalypse\_Materials\UnlitVertexColour_Alpha.shader" />
@@ -723,23 +724,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{31F8A324-F254-AF02-7259-B333D8EC9530}</Project>
+      <Project>{23AA9324-BFC7-FC5B-49AA-26B1C5F7D4F7}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
-      <Project>{96393ABF-E9D4-C2E0-2E01-795A2CD0F278}</Project>
+      <Project>{B57CA3FA-8B14-B33F-4CA1-B0C1BEC885A4}</Project>
       <Name>Boxophobic.Utils.Scripts</Name>
     </ProjectReference>
     <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
-      <Project>{980CD568-74BD-7186-5A4F-F55A969AED80}</Project>
+      <Project>{DA4A9108-8F73-7AA5-C7E0-3F29DA9BAA11}</Project>
       <Name>Boxophobic.Utils.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Boxophobic.PolyverseSkies.Editor.csproj">
-      <Project>{B7B0721E-FC6D-3905-7E3C-27A38B457B36}</Project>
+      <Project>{D210EA46-D004-6FE9-97CA-636F6924EA0F}</Project>
       <Name>Boxophobic.PolyverseSkies.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Boxophobic.PolyverseSkies.Runtime.csproj">
-      <Project>{E4AB3647-BEC3-7CFE-AEE7-40BACB3D586F}</Project>
+      <Project>{77CC28FD-3AAE-E6BF-FDF5-791CE7A825EB}</Project>
       <Name>Boxophobic.PolyverseSkies.Runtime</Name>
     </ProjectReference>
   </ItemGroup>

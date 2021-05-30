@@ -53,7 +53,8 @@ public class Enemy : LivingActivity
             StartCoroutine("modelFadeOut");
             thisAn.SetTrigger("Die");
             onEnemyDie.Invoke(this);
-
+            //socre
+            ScoreKeeper.instance.score += 10;
             Destroy(Instantiate(deathEffect, hitpoint, Quaternion.FromToRotation(hitdirection, Vector3.forward)) as GameObject,1.5f);
         }
     }
@@ -66,6 +67,6 @@ public class Enemy : LivingActivity
             meshRender.material.color = modelColor;
             yield return null;
         }
-        Destroy(this.gameObject);  //OndieÊÂ¼þ´¥·¢
+        Destroy(this.gameObject);  
     }
 }
