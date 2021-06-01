@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     float masterVolumePercent = 1;
     float sfxVoluePercent = 1;
-    float musicVolumePercent = 1;
+    //float musicVolumePercent = 1;
 
     public AudioSource gunEffect;
 

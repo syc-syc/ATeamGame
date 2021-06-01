@@ -75,12 +75,13 @@
     <Compile Include="Assets\Scripts\Gun\Gun.cs" />
     <Compile Include="Assets\Scripts\Map\MapGenerotor.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\UI\ScoreKeeper.cs" />
     <Compile Include="Assets\Scripts\Map\RandomMaze.cs" />
     <Compile Include="Assets\Scripts\Enemy\Spwaner.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Factory\FactorySO.cs" />
-    <Compile Include="Assets\Scripts\UI\ScoreKeeper.cs" />
+    <Compile Include="Assets\Scripts\UI\ScoreManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\SimpleApocalypse\_Materials\UnlitVertexColour_Alpha.shader" />

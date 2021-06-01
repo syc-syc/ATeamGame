@@ -69,4 +69,11 @@ public class Enemy : LivingActivity
         }
         Destroy(this.gameObject);  
     }
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Player")
+        {
+            Debug.Log("Attack");
+        }
+    }
 }

@@ -17,7 +17,7 @@ public class Player : LivingActivity
         playerHP.SetHpCanvas(maxHp);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if(Input.GetMouseButton(0))
         {
@@ -27,15 +27,18 @@ public class Player : LivingActivity
         {
             gunController.equippedGun.fireEffect.SetActive(false);
         }
-        Relod();  //TODO ¶à´ÎBug
-    }
-    void Relod()
-    {
-        if(Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             gunController.Reload();
         }
     }
+    //void Relod()
+    //{
+    //    if(Input.GetKeyDown(KeyCode.R))
+    //    {
+    //        gunController.Reload();
+    //    }
+    //}
     public void GetDamage(int damageValue)
     {
         playerHP.GetDamage(damageValue);
