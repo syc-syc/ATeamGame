@@ -18,10 +18,12 @@ public class Enemy : LivingActivity
 
     public UnityEvent OnNextWave = new UnityEvent();
     public EnemyDieEvent onEnemyDie = new EnemyDieEvent();
+    private Player pl;
     void Start()
     {
         if (GameObject.FindGameObjectWithTag("Player")!=null)
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        pl = GameObject.Find("Player").GetComponent<Player>();
         meshRender = GetComponentInChildren<SkinnedMeshRenderer>();
         navMenshAgent = this.GetComponent<NavMeshAgent>();
         thisAn =this.GetComponent<Animator>();
@@ -73,7 +75,7 @@ public class Enemy : LivingActivity
     {
         if(other.tag == "Player")
         {
-            Debug.Log("Attack");
+            pl.GetDamage(10);
         }
     }
 }
