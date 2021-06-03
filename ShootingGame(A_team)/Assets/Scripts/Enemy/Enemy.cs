@@ -57,7 +57,7 @@ public class Enemy : LivingActivity
             onEnemyDie.Invoke(this);
             //socre
             ScoreKeeper.instance.score += 10;
-            Destroy(Instantiate(deathEffect, hitpoint, Quaternion.FromToRotation(hitdirection, Vector3.forward)) as GameObject,1.5f);
+            Destroy(Instantiate(deathEffect, hitpoint, Quaternion.FromToRotation(hitdirection, Vector3.forward)) as GameObject,0.5f);
         }
     }
     IEnumerator modelFadeOut()

@@ -38,6 +38,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7376159079986119427}
     m_Modifications:
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: ShapeModule.type
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: RotationModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: VelocityModule.x.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: SizeModule.y.minMaxState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: SizeModule.z.minMaxState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: RotationBySpeedModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7936390860758196027, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0.6981132
+      objectReference: {fileID: 0}
     - target: {fileID: 7936390860773235603, guid: 72f578844d6e9e84c8812cc57476f91c, type: 3}
       propertyPath: m_Name
       value: DeathEffect

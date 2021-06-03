@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
             Vector3 playerToMouse = floorHit.point - this.transform.position;
             playerToMouse.y = 0f;
             Quaternion newRotatation = Quaternion.LookRotation(playerToMouse);
-            this.transform.DORotateQuaternion(newRotatation, 0.65f);
+            this.transform.DORotateQuaternion(newRotatation, 0.8f);
         }
     }
  

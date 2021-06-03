@@ -578,8 +578,6 @@ MonoBehaviour:
   - enemys:
     - enemyPrefab: {fileID: 3979547375588174900, guid: 50cc2d335b16e774d806c2dc19b7acd6, type: 3}
       cout: 15
-    - enemyPrefab: {fileID: 3979547375588174900, guid: 6c2fa51b05b378a489922d6a5ef855d7, type: 3}
-      cout: 5
     timeBetweenSpawn: 0.6
   - enemys:
     - enemyPrefab: {fileID: 3979547375588174900, guid: 6c2fa51b05b378a489922d6a5ef855d7, type: 3}
@@ -600,20 +598,14 @@ MonoBehaviour:
   - enemys:
     - enemyPrefab: {fileID: 3979547375588174900, guid: bb27155768f122f4d84f50efaf330816, type: 3}
       cout: 10
-    - enemyPrefab: {fileID: 3979547375588174900, guid: 6c2fa51b05b378a489922d6a5ef855d7, type: 3}
-      cout: 15
     timeBetweenSpawn: 0.4
   - enemys:
     - enemyPrefab: {fileID: 3979547375588174900, guid: bb27155768f122f4d84f50efaf330816, type: 3}
       cout: 10
-    - enemyPrefab: {fileID: 3979547375588174900, guid: 6c2fa51b05b378a489922d6a5ef855d7, type: 3}
-      cout: 15
     timeBetweenSpawn: 0.4
   - enemys:
     - enemyPrefab: {fileID: 3979547375588174900, guid: bb27155768f122f4d84f50efaf330816, type: 3}
       cout: 10
-    - enemyPrefab: {fileID: 3979547375588174900, guid: 6c2fa51b05b378a489922d6a5ef855d7, type: 3}
-      cout: 15
     timeBetweenSpawn: 0.4
   OnNextWave:
     m_PersistentCalls:
@@ -2016,6 +2008,7 @@ RectTransform:
   - {fileID: 1296287479}
   - {fileID: 440260542}
   - {fileID: 1567126481}
+  - {fileID: 1900703133}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2120,6 +2113,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869851894}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1900703132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900703133}
+  - component: {fileID: 1900703135}
+  - component: {fileID: 1900703134}
+  m_Layer: 5
+  m_Name: EnemyNum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1900703133
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900703132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1761572862}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 851, y: -73}
+  m_SizeDelta: {x: 451.535, y: 442.18604}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1900703134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900703132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.5203068, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 64
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\uCD1D Enemy"
+--- !u!222 &1900703135
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900703132}
+  m_CullTransparentMesh: 1
 --- !u!1 &1913527619
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,7 +2412,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.5905e-41, y: -4.194343e+20, z: 4.5905e-41, w: 9.403955e-38}
+  m_BoundingSphereOverride: {x: 1.7e-44, y: 1e-45, z: 1, w: 4.57e-43}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
