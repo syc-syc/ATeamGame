@@ -107,7 +107,7 @@ public class Wave
       
         foreach (enemyContent enemycontent in enemys)
         {
-            Enemynum.text = "총 Enemy\n" + enemycontent.cout;
+            Enemynum.text = "Total Enemy\n" + enemycontent.cout;
             for (int i = 0; i < enemycontent.cout; i++)
             {
                 allEnemys.Enqueue(enemycontent.enemyPrefab);
