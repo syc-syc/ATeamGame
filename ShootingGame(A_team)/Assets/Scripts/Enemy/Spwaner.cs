@@ -42,7 +42,7 @@ public class Spwaner : MonoBehaviour
                 currentWave = waves[++currentWaveNumber];
                 currentWave.SetEnemy();
                 StartCoroutine(DelayNextWave(NextWave));
-                //下一波事件
+                //Next wave
             }
         }
 
@@ -115,7 +115,7 @@ public class Wave
         }
         allEnemys = new Queue<Enemy>(Shuffle<Enemy>.ShuffleTheList(allEnemys.ToArray()));
     }
-    //波数的控制 一开始生成一大部分 接下来持续生成敌人
+    //control wave
 }
 [System.Serializable]
 public struct enemyContent
