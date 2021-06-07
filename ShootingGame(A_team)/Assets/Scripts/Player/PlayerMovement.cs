@@ -6,11 +6,13 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody thisRg;
     public float moveSpeed;
+    private Animator an;
 
     public LayerMask floorMask;
     private void Awake()
     {
         thisRg = this.GetComponent<Rigidbody>();
+        an = GameObject.Find("Mesh Object").GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -23,6 +25,14 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         Vector3 moveVelocity = moveInput.normalized * moveSpeed;
         thisRg.MovePosition(thisRg.position + moveVelocity * Time.fixedDeltaTime);
+        if(moveInput != Vector3.zero)
+        {
+            an.SetBool("Walk", true);
+        }
+        else
+        {
+            an.SetBool("Walk", false);
+        }
     }
     void Turning()
     {
