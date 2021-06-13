@@ -11,7 +11,7 @@ public class Enemy : LivingActivity
     Transform player;
     NavMeshAgent navMenshAgent;
     Animator thisAn;
-    SkinnedMeshRenderer meshRender;
+    MeshRenderer meshRender;
     public float updateRate;
 
     public GameObject deathEffect; 
@@ -24,10 +24,9 @@ public class Enemy : LivingActivity
         if (GameObject.FindGameObjectWithTag("Player")!=null)
         player = GameObject.FindGameObjectWithTag("Player").transform;
         pl = GameObject.Find("Player").GetComponent<Player>();
-        meshRender = GetComponentInChildren<SkinnedMeshRenderer>();
+        meshRender = GetComponentInChildren<MeshRenderer>();
         navMenshAgent = this.GetComponent<NavMeshAgent>();
-        thisAn =this.GetComponent<Animator>();
-        thisAn.SetBool("Chase", true);
+        thisAn = GetComponentInChildren<Animator>();
         StartCoroutine("updatePath");
     }
 
@@ -45,7 +44,7 @@ public class Enemy : LivingActivity
             yield return new WaitForSeconds(updateRate);
         }
     }
-    public override void Die(Vector3 hitpoint,Vector3 hitdirection)
+    public override void Die(Vector3 hitpoint, Vector3 hitdirection)
     {
         if(currentHp<=0&&!isDead)
         {
@@ -57,7 +56,6 @@ public class Enemy : LivingActivity
             onEnemyDie.Invoke(this);
             //socre
             ScoreKeeper.instance.score += 10;
-            Destroy(Instantiate(deathEffect, hitpoint, Quaternion.FromToRotation(hitdirection, Vector3.forward)) as GameObject,0.5f);
         }
     }
     IEnumerator modelFadeOut()
@@ -69,6 +67,7 @@ public class Enemy : LivingActivity
             meshRender.material.color = modelColor;
             yield return null;
         }
+        Destroy(Instantiate(deathEffect, transform.position, Quaternion.identity) as GameObject, 0.5f);
         Destroy(this.gameObject);  
     }
     public void OnTriggerEnter(Collider other)

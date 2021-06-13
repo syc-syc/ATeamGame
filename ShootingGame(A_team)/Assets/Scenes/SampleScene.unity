@@ -688,39 +688,47 @@ MonoBehaviour:
   mentionText: {fileID: 896355666}
   waves:
   - enemys:
-    - enemyPrefab: {fileID: 3979547375588174900, guid: 50cc2d335b16e774d806c2dc19b7acd6, type: 3}
+    - enemyPrefab: {fileID: 7131444280935162467, guid: ece9bb975b59ec647a00be43a98b4da7, type: 3}
       cout: 10
     timeBetweenSpawn: 1
   - enemys:
-    - enemyPrefab: {fileID: 3979547375588174900, guid: 50cc2d335b16e774d806c2dc19b7acd6, type: 3}
+    - enemyPrefab: {fileID: 1695745735257939058, guid: 3d45a872bac82da479198279e8b47a55, type: 3}
       cout: 15
     timeBetweenSpawn: 0.6
   - enemys:
-    - enemyPrefab: {fileID: 3979547375588174900, guid: 6c2fa51b05b378a489922d6a5ef855d7, type: 3}
+    - enemyPrefab: {fileID: 7131444280935162467, guid: ece9bb975b59ec647a00be43a98b4da7, type: 3}
       cout: 15
     timeBetweenSpawn: 0.5
   - enemys:
-    - enemyPrefab: {fileID: 3979547375588174900, guid: bb27155768f122f4d84f50efaf330816, type: 3}
-      cout: 10
-    - enemyPrefab: {fileID: 3979547375588174900, guid: 6c2fa51b05b378a489922d6a5ef855d7, type: 3}
-      cout: 15
-    timeBetweenSpawn: 0.4
-  - enemys:
-    - enemyPrefab: {fileID: 3979547375588174900, guid: bb27155768f122f4d84f50efaf330816, type: 3}
-      cout: 10
-    - enemyPrefab: {fileID: 3979547375588174900, guid: 6c2fa51b05b378a489922d6a5ef855d7, type: 3}
-      cout: 15
-    timeBetweenSpawn: 0.4
-  - enemys:
-    - enemyPrefab: {fileID: 3979547375588174900, guid: bb27155768f122f4d84f50efaf330816, type: 3}
+    - enemyPrefab: {fileID: 7131444280935162467, guid: ece9bb975b59ec647a00be43a98b4da7, type: 3}
       cout: 10
     timeBetweenSpawn: 0.4
   - enemys:
-    - enemyPrefab: {fileID: 3979547375588174900, guid: bb27155768f122f4d84f50efaf330816, type: 3}
+    - enemyPrefab: {fileID: 1695745735257939058, guid: 3d45a872bac82da479198279e8b47a55, type: 3}
       cout: 10
     timeBetweenSpawn: 0.4
   - enemys:
-    - enemyPrefab: {fileID: 3979547375588174900, guid: bb27155768f122f4d84f50efaf330816, type: 3}
+    - enemyPrefab: {fileID: 7131444280935162467, guid: ece9bb975b59ec647a00be43a98b4da7, type: 3}
+      cout: 10
+    timeBetweenSpawn: 0.4
+  - enemys:
+    - enemyPrefab: {fileID: 1695745735257939058, guid: 3d45a872bac82da479198279e8b47a55, type: 3}
+      cout: 10
+    timeBetweenSpawn: 0.4
+  - enemys:
+    - enemyPrefab: {fileID: 7131444280935162467, guid: ece9bb975b59ec647a00be43a98b4da7, type: 3}
+      cout: 10
+    timeBetweenSpawn: 0.4
+  - enemys:
+    - enemyPrefab: {fileID: 1695745735257939058, guid: 3d45a872bac82da479198279e8b47a55, type: 3}
+      cout: 10
+    timeBetweenSpawn: 0.4
+  - enemys:
+    - enemyPrefab: {fileID: 7131444280935162467, guid: ece9bb975b59ec647a00be43a98b4da7, type: 3}
+      cout: 10
+    timeBetweenSpawn: 0.4
+  - enemys:
+    - enemyPrefab: {fileID: 1695745735257939058, guid: 3d45a872bac82da479198279e8b47a55, type: 3}
       cout: 10
     timeBetweenSpawn: 0.4
   OnNextWave:

@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         thisRg = this.GetComponent<Rigidbody>();
-        an = GameObject.Find("Mesh Object").GetComponent<Animator>();
+        an = GetComponentInChildren<Animator>();
     }
 
     private void FixedUpdate()
@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         Vector3 moveVelocity = moveInput.normalized * moveSpeed;
         thisRg.MovePosition(thisRg.position + moveVelocity * Time.fixedDeltaTime);
-        if(moveInput != Vector3.zero)
+        if (moveInput != Vector3.zero)
         {
             an.SetBool("Walk", true);
         }
