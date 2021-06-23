@@ -54,8 +54,6 @@ public class Enemy : LivingActivity
             StartCoroutine("modelFadeOut");
             thisAn.SetTrigger("Die");
             onEnemyDie.Invoke(this);
-            //socre
-            ScoreKeeper.instance.score += 10;
         }
     }
     IEnumerator modelFadeOut()
