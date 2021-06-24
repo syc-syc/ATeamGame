@@ -21,14 +21,14 @@ public class HPBar : MonoBehaviour
     public void SetHpCanvas(float maxHpValue)
     {
         maxHp = maxHpValue;
-        Hptext.text = maxHp.ToString() + "/" + maxHp.ToString();
+        Hptext.text = maxHp.ToString() + " /" + maxHp.ToString();
         currentHP = maxHp;
     }
     public void SetHpCanvas(float maxHpValue,float currentHpvalue)
     {
         maxHp = maxHpValue;
         currentHP = currentHpvalue;
-        Hptext.text = currentHP.ToString() + "/" + maxHp.ToString();
+        Hptext.text = currentHP.ToString() + "/ " + maxHp.ToString();
     }
     public void GetDamage(int value)
     {
