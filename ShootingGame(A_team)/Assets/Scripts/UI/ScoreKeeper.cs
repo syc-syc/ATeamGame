@@ -68,7 +68,7 @@ public class ScoreKeeper : MonoBehaviour
                  .setOnUpdate((float _obj) =>
                  {
                      fromScore = _obj;
-                     ScoreText.text = "Score:" + _obj.ToString(" 000000");
+                     ScoreText.text = "Score:" + _obj.ToString("000000 ") + "/ 2W";
 
                  });
 

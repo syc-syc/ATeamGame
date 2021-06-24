@@ -19,6 +19,9 @@ public class Enemy : LivingActivity
     public UnityEvent OnNextWave = new UnityEvent();
     public EnemyDieEvent onEnemyDie = new EnemyDieEvent();
     private Player pl;
+    //socrekepper
+    private ScoreKeeper socrekeeper;
+
     void Start()
     {
         if (GameObject.FindGameObjectWithTag("Player")!=null)
@@ -28,6 +31,11 @@ public class Enemy : LivingActivity
         navMenshAgent = this.GetComponent<NavMeshAgent>();
         thisAn = GetComponentInChildren<Animator>();
         StartCoroutine("updatePath");
+        //socreKepper
+        if (GameObject.Find("Score") != null)
+        {
+            socrekeeper = GameObject.Find("Score").GetComponent<ScoreKeeper>();
+        }
     }
 
     // Update is called once per frame
@@ -54,6 +62,8 @@ public class Enemy : LivingActivity
             StartCoroutine("modelFadeOut");
             thisAn.SetTrigger("Die");
             onEnemyDie.Invoke(this);
+            //score killEnemy
+            socrekeeper.KillEnemy();
         }
     }
     IEnumerator modelFadeOut()
@@ -65,6 +75,7 @@ public class Enemy : LivingActivity
             meshRender.material.color = modelColor;
             yield return null;
         }
+        AudioManager.instance.EnemyKill(this.transform.position);
         Destroy(Instantiate(deathEffect, transform.position, Quaternion.identity) as GameObject, 0.5f);
         Destroy(this.gameObject);  
     }

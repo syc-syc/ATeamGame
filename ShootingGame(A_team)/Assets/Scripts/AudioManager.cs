@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip ShootClip;
     public AudioClip RelodClip;
+    public AudioClip EnemykillClip;
 
  
     private void Awake()
@@ -33,5 +34,9 @@ public class AudioManager : MonoBehaviour
     public void Relod(Vector3 pos)
     {
         PlaySound(RelodClip, pos);
+    }
+    public void EnemyKill(Vector3 pos)
+    {
+        PlaySound(EnemykillClip, pos);
     }
 }
