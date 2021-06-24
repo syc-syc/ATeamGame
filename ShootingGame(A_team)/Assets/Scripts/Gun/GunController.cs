@@ -42,7 +42,7 @@ public class GunController : MonoBehaviour
 		maxBullet = equippedGun.bulletNumber;
 		equippedGun.OnShoot.AddListener(ReduceBullet);
 
-		maxBulletText.text ="/"+maxBullet.ToString();
+		maxBulletText.text ="/ "+maxBullet.ToString();
 	}
 
 	public void Shoot() 
